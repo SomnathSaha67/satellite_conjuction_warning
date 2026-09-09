@@ -1,6 +1,5 @@
 """
 Labels each warning ACTIONABLE or IGNORE.
-Cutoff: (-6.0) 
 """
 
 from src.config import ACTIONABLE_THRESHOLD

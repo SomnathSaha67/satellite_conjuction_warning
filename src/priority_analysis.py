@@ -1,4 +1,4 @@
-"""Create a transparent priority score from several easy-to-explain signals."""
+"""Create a transparent priority score."""
 
 import numpy as np
 import pandas as pd
