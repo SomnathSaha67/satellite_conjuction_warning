@@ -1,4 +1,4 @@
-# Satellite Conjunction Warning Prioritization
+# Satellite Conjunction Warning Prioritization System
 
 ## Project Overview
 
