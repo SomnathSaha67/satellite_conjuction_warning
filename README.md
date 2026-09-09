@@ -40,6 +40,23 @@ For each event, the system produces:
 
 The repository includes a small sample dataset so that anyone can run the project immediately. The original local dataset contains 162,634 warning rows, 103 columns, and 13,154 unique events, but it is not committed because it exceeds GitHub's standard file-size limit.
 
+## Dataset
+
+The project uses the [Collision Avoidance Challenge dataset on Kaggle](https://www.kaggle.com/datasets/shadmanrohan/collisionavoidancechallenge). It contains repeated satellite conjunction-warning records, where each row represents one warning for a possible close-approach event. Important fields include:
+
+- `event_id`: identifies the close-approach event.
+- `time_to_tca`: time remaining until the predicted closest approach.
+- `risk`: the risk value supplied by the dataset.
+- `miss_distance`: predicted distance between the objects at closest approach.
+- `mahalanobis_distance`: an uncertainty-related measurement used by the priority analysis when available.
+
+Two dataset options are available:
+
+- `data/sample_train_data.csv`: a small, committed demonstration dataset used by the default configuration. It lets readers run and inspect the project immediately after cloning it.
+- `data/train_data.csv`: the larger local dataset used for the full analysis. It contains 162,634 rows and 103 columns, but is excluded from GitHub because it is approximately 222 MB.
+
+To run the full analysis, download the dataset from Kaggle, extract the CSV, place it at `data/train_data.csv`, and change `DATA_PATH` in `src/config.py` to use it. The smaller sample remains the default so the project can still run immediately after cloning.
+
 ## System Architecture
 
 ```text
