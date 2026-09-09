@@ -1,0 +1,19 @@
+# Generated analysis reports
+outputs/
+
+# Large local dataset; the small sample dataset is committed for demonstration
+data/train_data.csv
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment and editor files
+.env
+.vscode/
